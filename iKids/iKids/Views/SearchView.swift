@@ -8,8 +8,38 @@
 import SwiftUI
 
 struct SearchView: View {
+    @StateObject var oo = SearchObservableObject()
+    @State private var searchTerm = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("Find a movie")
+                    .font(.title.weight(.bold))
+                
+                Text("Start searching for a movie suits your choice")
+                    .multilineTextAlignment(.center)
+            }
+            
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .navigationTitle("Search")
+            .foregroundColor(.secondary)
+            
+        }.searchable(text: $searchTerm) {
+            ForEach(oo.searchResults) { movie in
+                //Show a single item
+                MovieRowView(movie: movie)
+            }
+            
+        }
+        .onChange(of: searchTerm) {
+            searchTerm in oo.searchResults = oo.data.filter({
+                movie in movie.name.lowercased().contains(searchTerm.lowercased())
+                
+            })
+        }
+        
     }
 }
 
