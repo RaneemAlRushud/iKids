@@ -14,7 +14,7 @@
 <h1> <li> 1. What is "iKids" ❔  </li> </h1>
 
 <p align="left">
-"iKids" is a localized iOS mobile app that provides a free and safe video streaming content which entertains and educates kids/Teenagers of all age groups with popular shows and movies. 
+"iKids" is a localized iOS mobile app that provides a free, safe, and non-profit video streaming content which entertains and educates kids/Teenagers of all age groups with popular shows and movies. 
 
 
 
