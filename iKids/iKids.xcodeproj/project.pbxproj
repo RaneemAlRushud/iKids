@@ -16,6 +16,8 @@
 		F59607E2298817A2008B930A /* MoviePosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59607E1298817A2008B930A /* MoviePosterModel.swift */; };
 		F59607E429881807008B930A /* MovieRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59607E329881807008B930A /* MovieRowView.swift */; };
 		F59607E62988181F008B930A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59607E52988181F008B930A /* SearchView.swift */; };
+		F5BA173F29897A5200DF375F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA173E29897A5200DF375F /* ColorExtension.swift */; };
+		F5BA174129897A9400DF375F /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA174029897A9400DF375F /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		F59607E1298817A2008B930A /* MoviePosterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterModel.swift; sourceTree = "<group>"; };
 		F59607E329881807008B930A /* MovieRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowView.swift; sourceTree = "<group>"; };
 		F59607E52988181F008B930A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F5BA173E29897A5200DF375F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		F5BA174029897A9400DF375F /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,7 @@
 		F59607D729881689008B930A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F59607E329881807008B930A /* MovieRowView.swift */,
+				F5BA174229897AF300DF375F /* SubViews */,
 				F59607E52988181F008B930A /* SearchView.swift */,
 			);
 			path = Views;
@@ -135,6 +139,8 @@
 		F59607DB298816A8008B930A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F5BA173E29897A5200DF375F /* ColorExtension.swift */,
+				F5BA174029897A9400DF375F /* ViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -144,6 +150,14 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F5BA174229897AF300DF375F /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				F59607E329881807008B930A /* MovieRowView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,9 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BA174129897A9400DF375F /* ViewExtension.swift in Sources */,
 				F59607CA29881667008B930A /* ContentView.swift in Sources */,
 				F59607E029881772008B930A /* SearchObservableObject.swift in Sources */,
 				F59607C829881667008B930A /* iKidsApp.swift in Sources */,
+				F5BA173F29897A5200DF375F /* ColorExtension.swift in Sources */,
 				F59607E62988181F008B930A /* SearchView.swift in Sources */,
 				F59607E2298817A2008B930A /* MoviePosterModel.swift in Sources */,
 				F59607E429881807008B930A /* MovieRowView.swift in Sources */,
